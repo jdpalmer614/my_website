@@ -1,0 +1,67 @@
+<style> 
+	.grid-container-rules1 {
+	  display: grid;
+	  grid-template-rows: repeat(2, 1fr); 
+	  grid-template-columns: repeat(2, 1fr); 
+	  gap: 10px; 
+	}
+
+	.grid-item-rules1 {
+	  border: 1px solid #ccc;
+	  padding: 10px;
+	  text-align: center;
+	  border: none;
+	}
+
+	.grid-container-rules2 {
+	  display: grid;
+	  grid-template-rows: repeat(9, 1fr); 
+	  grid-template-columns: repeat(9, 1fr); 
+	  gap: 10px; 
+	}
+
+	.grid-item-rules2 {
+	  border: 1px solid #ccc;
+	  padding: 10px;
+	  text-align: center;
+	  border: none;
+	}
+</style>
+
+
+<h1 class="center-text">How to Play?</h1>
+<hr class="black-line">
+
+<h5> The objective of the game is to find a set of 3 cards from the 12 face up cards on the table. Each card has 4 attributes which can vary as follows: </h5> 
+</br>
+
+<div class="grid-container-rules1">
+   <div class="grid-item-rules1">
+   		<%= render "shared/color-display" %>
+   </div>
+   <div class="grid-item-rules1">
+   		<%= render "shared/shape-display" %>
+
+   </div>
+   <div class="grid-item-rules1">
+   		<%= render "shared/shade-display" %>
+   </div>
+   <div class="grid-item-rules1">
+   		<%= render "shared/number-display" %>
+   </div>
+</div>
+<hr class="black-line">
+</br> 
+<div>
+	<%= link_to "Play Game of Set", play_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+</div>
+</br>
+<div>
+	<%= link_to "Full Deck of Cards Visual", fulldeck_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+</div>
+</br>
+<div>
+	<%= link_to "Leaderboards", leaderboards_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+</div>
+</br>
+

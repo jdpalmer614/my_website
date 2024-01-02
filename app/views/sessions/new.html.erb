@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center form-height">
+    <div class="col-md-6">
+      <div class="rounded p-3  border border-dark shadow-lg text-black form-color">
+      	<h2 class="text-center mb-4">Sign In</h2>
+      		<%= form_with url: sign_in_path do |form| %>
+
+      			<% if flash[:alert] %>
+    					<div class="alert my-red-alert" role="alert"> 
+      						<div> <%= flash[:alert] %> </div> 
+      				</div>
+  					<% end %>
+
+		  			<div>
+							<div class="mb-3">	
+								<%= form.text_field :user_name, class: "form-control", placeholder: "username" %>
+							</div>
+							<div class="mb-3">		
+								<%= form.password_field :password, class: "form-control", placeholder: "password" %>
+							</div>
+							<div class="mb-3">
+								<%= form.submit "Sign In", class: "btn btn-outline-dark btn-block w-100 text-center"%>
+							</div>
+							<hr class="black-line">
+							<div>
+								<%= link_to "Create new account", sign_up_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+							</div>
+		  			</div>
+					<% end %>  
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+
+<style>
+  .play-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; /* Adjust the gap between columns as needed */
+        }
+
+  .play-grid-item {
+            border: 1px solid #000; /* Add your styling for grid items */
+            padding: 20px;
+            text-align: center;
+            border: none;
+  }
+
+  .second-column {
+            grid-row: span 3; /* Set the second column to span 4 rows */
+  }
+</style>
+
+<div class="play-grid-container">
+      <div class="play-grid-item">
+        <div class="card-display-page">
+          <div id="game-board" class="center-text"> </div>
+        </div>
+      </div>
+      <div class="play-grid-item">
+        <h1> Menu </h1>
+        <hr class="black-line">
+        <div class="play-grid-item second-column">
+          <%= link_to "How to play?", rules_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+        </div>
+        <div class="play-grid-item second-column">
+          <%= link_to "Full Deck of Cards Visual", fulldeck_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+        </div>
+        <div class="play-grid-item second-column">
+          <%= link_to "Leaderboards", leaderboards_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+        </div>
+      </div>
+      
+</div>
+<script type="module" src="<%= javascript_path 'main' %>"></script>
+<hr class="black-line">

@@ -1,0 +1,427 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+#my-bg{
+	background: linear-gradient(to left, #EBEBEB, #F5F5F5, #CCCCCC);
+}
+
+.form-color {
+	background: linear-gradient(to right, #EBEBEB, #F5F5F5, #CCCCCC);
+}
+
+
+.form-height {
+	height: 60vh;
+}
+
+.my-table {
+	width: 100%;
+	margin:  auto;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+.my-th, .my-td {
+	padding: 16px;
+	text-align: left;
+}
+
+th:hover {
+ background-color: #333333;
+ color:  white; /* Change the color to your desired highlight color */
+}
+
+td:hover {
+ background-color: #333333;
+ color:  white; /* Change the color to your desired highlight color */
+}
+
+.my-blue-alert {
+	background: linear-gradient(to left, #93B9FF, #A5C9FF, #93B9FF);
+	border: 1px solid #6E8B9E;
+	box-shadow: 0 4px 8px rgba(128, 128, 128, 0.3);
+}
+
+.my-red-alert {
+	background: linear-gradient(to right, #F0CBCB, #FFB2B2, #F0CBCB);
+	border: 2px solid #DAA8A8;
+	box-shadow: 0 4px 8px rgba(128, 128, 128, 0.3);
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.my-table-color {
+	background-color: red;
+}
+
+.my-blue-color {
+	background: linear-gradient(to left, #93B9FF, #A5C9FF, #93B9FF);
+}
+
+
+
+.square {
+  width: 120px; 
+  height: 120px; 
+  border: solid 1px black; 
+  box-sizing: border-box; 
+  border-radius: 20px; 
+  background-color: white; 
+}
+
+#game-board { 
+  background-color: white;
+  padding: 20px; 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 10px; 
+}
+
+
+
+#display-board {
+  background-color: #DAC778;
+  padding: 20px; 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(1, 1fr);    
+  gap: 10px;  
+}
+
+.center-text { 
+  text-align: center;
+}
+
+.display-shape {
+  margin: 10px; 
+  width: 200px; 
+  height: 100px; 
+  border: solid 5px black; 
+  box-sizing: border-box; 
+  border-radius: 20px; 
+  background-color: white; 
+  text-align: center;
+  line-height: 100px;
+}
+
+.player-board {
+  background-color: #DAC778;
+  border: solid 5px black; 
+  margin: 10px;
+  padding: 20px; 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(1, 1fr);    
+  gap: 10px;  
+}
+
+
+.card-display-page {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+*, *::before, *::after {
+  box-sizing:  border-box;
+}
+
+.card {
+  --width:  5em;
+  --height:  calc(var(--width) * 1.4);
+  width:  var(--width);
+  height:  var(--height);
+  background-color: white;
+  border-radius:  0.25em;
+  border:  1px solid black;
+  padding: 0.75em;
+  grid-template-columns: repeat(1, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pip {
+  grid-row:  span 1; 
+  width:  100%;
+  aspect-ratio:  1 / 1;
+  transform: rotate(90deg);
+
+  pointer-events: none;
+}
+
+
+[data-number="1"] .pip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('blue/blue-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('blue/blue-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('blue/blue-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+
+
+[data-color="green"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('green/green-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('green/green-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('green/green-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('green/green-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('green/green-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('green/green-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+[data-color="green"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('green/green-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('green/green-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('green/green-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+
+
+
+[data-color="red"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('red/red-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('red/red-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('red/red-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('red/red-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('red/red-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('red/red-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+[data-color="red"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('red/red-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('red/red-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('red/red-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+#game-board-display { 
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px; 
+  display: grid; 
+  grid-template-columns: repeat(9, 1fr); 
+  grid-template-rows: repeat(9, 1fr);    
+  gap: 10px; 
+}
+
+
+#game-board { 
+  background-color: rgba(0, 0, 0, 0);  
+  padding: 20px; 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr);    
+  gap: 10px; 
+}
+
+.center-text { 
+  text-align: center;
+}
+
+
+
+
+
+

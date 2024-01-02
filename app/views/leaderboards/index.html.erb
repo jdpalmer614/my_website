@@ -1,0 +1,25 @@
+
+<div class="container">
+  <h1 style="text-align: center;">Leaderboards</h1>
+  <hr class="black-line">
+  <table class="my-table no-border table-hover">
+    <thead>
+      <tr>
+        <th scope="col" class="my-th">Rank</th>
+        <th scope="col" class="my-th">User</th>
+        <th scope="col" class="my-th">Games Played</th>
+        <th scope="col" class="my-th">High Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr class="">
+          <th class="my-td"><%= user.id %></th>
+          <td class="my-td"><%= user.user_name %></td>
+          <td class="my-td">100</td>
+          <td class="my-td">100</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -15,4 +15,8 @@ Rails.application.routes.draw do
   get "play", to: "play#index"
 
   get "fulldeck", to: "fulldeck#index"
+
+  get "menu", to: "menu#index"
 end
+
+

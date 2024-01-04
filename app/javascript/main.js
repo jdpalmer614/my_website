@@ -123,8 +123,6 @@ function eventFunction(event)
         selectedCards.push(card.id); 
     }
 
-    console.log("s: ", selectedCards);
-
 
     if (selectedCards.length === 3) 
     {

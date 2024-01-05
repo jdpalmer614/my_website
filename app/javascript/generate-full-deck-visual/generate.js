@@ -4,7 +4,7 @@ const shapeArray = ['diamond', 'oval', 's'];
 const shadeArray = ['fill', 'none', 'striped'];
 const numberArray = [1, 2, 3];
 
-const gameBoard = document.querySelector("#game-board-display");
+const gameBoard = document.querySelector("#full-deck-display");
 
 for (let color of colorArray) {
   for (let shape of shapeArray) {

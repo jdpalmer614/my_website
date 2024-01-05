@@ -1,0 +1,13 @@
+
+.rules-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  place-items: center;
+}
+
+.rules-column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+}

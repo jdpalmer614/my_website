@@ -1,0 +1,257 @@
+.card-display-page {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.card {
+  --width:  5em;
+  --height:  calc(var(--width) * 1.4);
+  width:  var(--width);
+  height:  var(--height);
+  background-color: white;
+  border-radius:  0.25em;
+  border:  1px solid black;
+  padding: 0.75em;
+  grid-template-columns: repeat(1, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pip {
+  grid-row:  span 1; 
+  width:  100%;
+  aspect-ratio:  1 / 1;
+  transform: rotate(90deg);
+
+  pointer-events: none;
+}
+
+
+[data-number="1"] .pip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('blue/blue-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('blue/blue-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('blue/blue-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('blue/blue-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="blue"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('blue/blue-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+
+
+[data-color="green"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('green/green-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('green/green-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('green/green-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('green/green-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('green/green-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('green/green-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+[data-color="green"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('green/green-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('green/green-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="green"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('green/green-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+
+
+
+[data-color="red"][data-shape="diamond"][data-shade="fill"] .pip {
+  background-image: url('red/red-diamond-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="diamond"][data-shade="none"] .pip {
+  background-image: url('red/red-diamond-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="diamond"][data-shade="striped"] .pip {
+  background-image: url('red/red-diamond-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="fill"] .pip {
+  background-image: url('red/red-oval-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="none"] .pip {
+  background-image: url('red/red-oval-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="oval"][data-shade="striped"] .pip {
+  background-image: url('red/red-oval-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+[data-color="red"][data-shape="s"][data-shade="fill"] .pip {
+  background-image: url('red/red-s-fill.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="s"][data-shade="none"] .pip {
+  background-image: url('red/red-s-none.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}
+
+
+[data-color="red"][data-shape="s"][data-shade="striped"] .pip {
+  background-image: url('red/red-s-striped.svg');
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position:  center; 
+}

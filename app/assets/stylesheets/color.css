@@ -1,0 +1,14 @@
+
+#my-background-color {
+	background: linear-gradient(to left, #EBEBEB, #F5F5F5, #CCCCCC);
+}
+
+.form-color {
+	background: linear-gradient(to right, #EBEBEB, #F5F5F5, #CCCCCC);
+}
+
+.my-red-alert {
+	background: linear-gradient(to right, #F0CBCB, #FFB2B2, #F0CBCB);
+	border: 2px solid #DAA8A8;
+	box-shadow: 0 4px 8px rgba(128, 128, 128, 0.3);
+}

@@ -5,9 +5,7 @@ import { shuffleArray } from './shuffle/shuffle-helper.js';
 import { areCardsEqual } from './card-helper/are-cards-equal.js'
 import { selectNineCards } from './card-helper/get-nine-cards.js'
 
-
 import { CreateASet } from './create-a-set/create-a-set.js';
-
 import { checkSet } from './is-it-a-set-logic/check-set.js';
 
 let gameBoard;
@@ -78,9 +76,7 @@ function beginNewRound() {
   liveDeck = new Deck(set);
 
   createHTMLForDeck();
-
-
-  
+ 
   console.log("card1: ", card1);
   console.log("card2: ", card2);
   console.log("card3: ", card3);

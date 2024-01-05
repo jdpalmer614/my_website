@@ -1,48 +1,41 @@
-	<style>
-		.underline-h3 {
-            text-decoration: underline;
-        }
-	</style>
-    <div class="container-fluid">
-  	</br>
-  	<h3 class="center-text underline-h3"> Generate A Random Set </h3>
-  	</br>
-        <div class="row">
-            <div class="col">
-                <div id="my-set" class="number-container mt-2">
-			    	<div>
-			    		<div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1">
-						  	<div class="pip"></div>
-					  	</div> 
-			    	</div>
-			    	<div class="">
-			    		<div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1"> 
-			        		<div class="pip"></div>
-					  	</div> 
-			    	</div>
-			    	<div>
-			    		<div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1"> 
-			        		<div class="pip"></div>
-			      		</div>
-			    	</div>
-				</div>
-            </div>
-        </div>
-      	</br>
-      	</br>
-        <div class="row">
-            <div class="col">
-                <button id="gButton" type="button" class="btn btn-outline-dark btn-block w-100 text-center">
-	    		 Click Me
-	    		</button>
-	    		<hr class="black-line">
-	    		<div>
-	    			<%= link_to "Go Back", menu_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
-	    		</div>
-	    		<hr class="black-line">
-            </div>
+</br>
+  <h3 class="center-text underline-h3"> Generate A Random Set </h3>
+</br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="my-set" class="col rules-container mt-2">       
+			<div>
+			    <div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1">
+					<div class="pip"></div>
+				</div> 
+			</div>
+			<div>
+			    <div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1"> 
+			        <div class="pip"></div>
+				</div> 
+			</div>
+			<div>
+			    <div class="card"  data-color="red" data-shape="diamond" data-shade="fill" data-number="1"> 
+			        <div class="pip"></div>
+			    </div>
+			</div>
         </div>
     </div>
+    <br></br>
+    <div class="row">
+        <div class="col">
+            <button id="gButton" type="button" class="btn btn-outline-dark btn-block w-100 text-center">
+	    		Click Me
+	        </button>
+	    	<hr class="black-line">
+	        <div>
+	    		<%= link_to "Go Back", menu_path, class: "btn btn-outline-dark btn-block w-100 text-center"  %>
+	    	</div>
+	    	<hr class="black-line">
+        </div>
+    </div>
+</div>
 <script type="module" src="<%= javascript_path 'generate-random-set' %>"></script>
 
 

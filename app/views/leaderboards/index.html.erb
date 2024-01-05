@@ -8,7 +8,7 @@
         <th scope="col" class="my-th">Rank</th>
         <th scope="col" class="my-th">User</th>
         <th scope="col" class="my-th">Games Played</th>
-        <th scope="col" class="my-th">High Score</th>
+        <th scope="col" class="my-th">Sets Found</th>
       </tr>
     </thead>
     <tbody>
@@ -16,8 +16,8 @@
         <tr class="">
           <th class="my-td"><%= user.id %></th>
           <td class="my-td"><%= user.user_name %></td>
-          <td class="my-td">100</td>
-          <td class="my-td">100</td>
+          <td class="my-td"><%= user.game_count %></td>
+          <td class="my-td"><%= user.sets_found %></td>
         </tr>
       <% end %>
     </tbody>
